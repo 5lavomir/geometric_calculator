@@ -15,7 +15,8 @@
 
 ## Project
 
-**Geometric Calculator**  was created for the purpose of passing semester 2 at NC Level 5 in UHI College
+**Geometric Calculator** was created as a part of module Aplications Development at NC Level 5 in UHI College\
+It is used to calculations areas, perimeters and volumes geometric figures.
 
 ## Languages used
 
