@@ -41,5 +41,5 @@ Project created at NC Level 5 in UHI College (Assessment)
    ```
 ## Contact
 
-Any quastions, just write.\
+Any questions, just write.\
 Slavomir [@twitter](https://twitter.com/SlavSzakal)
