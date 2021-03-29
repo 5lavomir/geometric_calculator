@@ -18,18 +18,18 @@ Project created at NC Level 5 in UHI College (Assessment)
 
 **Geometric Calculator**  was created for the purpose of passing semester 2 at NC Level 5 in UHI College
 
-### Languages used
+## Languages used
 
 * HTML
 * CSS
 * JavaScript
 
-### Content used
+## Content used
 
 * All shapes and formulas i drew by myself in Photoshop
 * Background.jpg - downloaded from [pixabay](https://pixabay.com/pl/illustrations/metalowe-tle-stali-szczotkowane-1212115/)
 
-### Starting up
+## Starting up
 
 1. **Clone the repo:**
    ```sh
@@ -39,7 +39,7 @@ Project created at NC Level 5 in UHI College (Assessment)
    ```sh
    Geometric_Calculator.html
    ```
-### Contact
+## Contact
 
 Any quastions, just write.\
 Slavomir [@twitter](https://twitter.com/SlavSzakal)
