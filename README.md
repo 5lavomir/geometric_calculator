@@ -6,6 +6,7 @@
     <li><a href="#project">Project</a></li>
     <li><a href="#languages-used">Languages used</a></li>
     <li><a href="#content-used">Content used</a></li>
+    <li><a href="#software-required">Software Required</a></li>
     <li><a href="#starting-up">Starting up</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -26,6 +27,10 @@
 
 * All shapes and formulas i drew by myself in Photoshop
 * Background.jpg - downloaded from [pixabay](https://pixabay.com/pl/illustrations/metalowe-tle-stali-szczotkowane-1212115/)
+
+## Software Required
+
+* Any Web Browser
 
 ## Starting up
 
