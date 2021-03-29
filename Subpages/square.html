@@ -1,0 +1,68 @@
+<!doctype html>
+<html style = "background: url(../Images/Background.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;	background-size: cover;">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Geometric Calculator - Slawomir Szakalinis</title>
+    <link rel="icon" href="../Images/icon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container" style="width:87%; height:70%; min-width:580px; min-height:650px; max-width:100vw; background-color: rgba(255, 255, 255, 0.5);	float: left; margin-top: 50px;	margin-left: 6.5%;  margin-right: 6.5%+30px; margin-bottom: 0; padding-left: 30px; padding-bottom: 30px; font-size: 30px;">
+        <div id="namedata">
+            <h1>
+                <center>Square</center>
+            </h1>
+			<input type="button" border="0" value="Back" onclick="location.href = '../Geometric_Calculator.html';" align="left" style="width:100px; height:50px; font-size:27px;"/>
+		</div>
+		<div class="picturecontainer" id="picture" style="margin-left:150px; margin-right:150px">
+		<img src = "../Images/squareb.png" alt = "square" title = "square" align = "right" width = "380px" height = "420px"/>
+		<img src = "../Images/squareb_formula.png" alt = "square formula" title = "square formula" align = "right" width = "380px" height = "420px"/>
+		<br><br>
+		a <input type="number" border="0" id="square_a" value="0" style="width:100px; height:40px; margin:5px; font-size:33px;"/><br>
+		<br><br><br><br>
+		<p id="square_Area" style="width:250px; height:40px; margin:5px 5px 5px 0px; font-size:33px;"></p>
+		<p id="square_P" style="width:250px; height:40px; margin:5px 5px 5px 0px; font-size:33px;"></p>
+
+		</div>
+        <input type="button" border="0" value="Result" onclick="SquareArea()" align="left" style="width:100px; height:50px; font-size:27px;"/>
+	</div>
+	<p style="width:100%; position:relative; margin-bottom:5px; float:right; font-size:12px; font-family: tahoma; text-align:center;"><strong>Copyright © Slawomir Szakalinis - 17004399. All rights reserved.</strong></p>
+
+    <script type="text/javascript">
+		window.addEventListener
+			(
+			'keydown',function KeySpaceBarAndEnter(event)
+				{
+				if((event.keyCode == 13) || (event.keyCode == 32))
+					{
+					SquareArea()
+					}
+				}
+			)
+
+		function SquareArea()
+			{
+			var f = 2;
+			var a = document.getElementById("square_a").value;
+			if (a == null || a == 0)
+				{
+				alert("Dimensions can not be 0.");
+				}
+			var Area = (Math.pow(parseFloat(a),2)).toFixed(f);
+			var P = (4 * parseFloat(a)).toFixed(f);
+			while (Area > 99999 || Area < 0 || P > 99999 || P < 0)
+				{
+				alert("Something is wrong. The number is negative or too big. Try again.");
+				Area = 0;
+				P = 0;
+				}
+			document.getElementById("square_Area").innerHTML = "A = " + Area + " cm<SUP>2</SUP>";
+			document.getElementById("square_P").innerHTML = "P = " + P + " cm";
+
+			}
+
+
+
+</script>

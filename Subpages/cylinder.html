@@ -1,0 +1,65 @@
+<!doctype html>
+<html style = "background: url(../Images/Background.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;	background-size: cover;">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Geometric Calculator - Slawomir Szakalinis</title>
+    <link rel="icon" href="../Images/icon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container" style="width:87%; height:70%; min-width:580px; min-height:650px; max-width:100vw; background-color: rgba(255, 255, 255, 0.5);	float: left; margin-top: 50px;	margin-left: 6.5%;  margin-right: 6.5%+30px; margin-bottom: 0; padding-left: 30px; padding-bottom: 30px; font-size: 30px;">
+        <div id="namedata">
+            <h1>
+                <center>Cylinder</center>
+            </h1>
+			<input type="button" border="0" value="Back" onclick="location.href = '../Geometric_Calculator.html';" align="left" style="width:100px; height:50px; font-size:27px;"/>
+		</div>
+		<div class="picturecontainer" id="picture" style="margin-left:150px; margin-right:150px">
+		<img src = "../Images/cylinderb.png" alt = "cylinder" title = "cylinder" align = "right" width = "380px" height = "420px"/>
+		<img src = "../Images/cylinderb_formula.png" alt = "cylinder formula" title = "cylinder formula" align = "right" width = "380px" height = "420px"/>
+		<br><br>
+		r <input type="number" border="0" id="cylinder_r" value="0" style="width:100px; height:40px; margin:5px; font-size:33px;"/><br>
+		h <input type="number" border="0" id="cylinder_h" value="0" style="width:100px; height:40px; margin:5px; font-size:33px;"/><br><br><br>
+		<p id="cylinder_V" style="width:250px; height:40px; margin:5px 5px 5px 0px; font-size:33px;"></p>
+		<p id="cylinder_S" style="width:250px; height:40px; margin:5px 5px 5px 0px; font-size:33px;"></p>
+
+		</div>
+        <input type="button" border="0" value="Result" onclick="CylinderArea()" align="left" style="width:100px; height:50px; font-size:27px;"/>
+	</div>
+	<p style="width:100%; position:relative; margin-bottom:5px; float:right; font-size:12px; font-family: tahoma; text-align:center;"><strong>Copyright © Slawomir Szakalinis - 17004399. All rights reserved.</strong></p>
+
+    <script type="text/javascript">
+       window.addEventListener
+			(
+			'keydown',function KeySpaceBarAndEnter(event)
+				{
+				if((event.keyCode == 13) || (event.keyCode == 32))
+					{
+					CylinderArea()
+					}
+				}
+			)
+
+		function CylinderArea()
+			{
+			var r = document.getElementById("cylinder_r").value;
+			var h = document.getElementById("cylinder_h").value;
+			if (r == null || r == 0 || h == null || h == 0)
+				{
+				alert("Dimensions can not be 0.");
+				}
+			var V = ((2 * Math.PI * Math.pow(parseFloat(r),2)) + (parseFloat(h) * 2 * Math.PI * parseFloat(r))).toFixed(2);
+			var S = (Math.PI * Math.pow(parseFloat(r),2) * parseFloat(h)).toFixed(2);
+			while (V > 99999 || V < 0 || S > 99999 || S < 0)
+				{
+				alert("Something is wrong. The number is negative or too big. Try again.");
+				V = 0;
+				S = 0;
+				}
+			document.getElementById("cylinder_V").innerHTML = "V = " + V + " cm<SUP>3</SUP>";
+			document.getElementById("cylinder_S").innerHTML = "S = " + S + " cm<SUP>2</SUP>";
+			}
+
+</script>
