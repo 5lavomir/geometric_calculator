@@ -1,6 +1,4 @@
 # geometric_calculator
-Project created at NC Level 5 in UHI College (Assessment)
-
 
 <details open="open">
   <summary><h2 style="display: inline-block">Contents</h2></summary>
