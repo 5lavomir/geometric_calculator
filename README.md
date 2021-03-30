@@ -45,5 +45,5 @@ It is used to calculations areas, perimeters and volumes geometric figures.
    ```
 ## Contact
 
-Any questions, just write.\
+Any questions, just let me know.\
 Slavomir [@twitter](https://twitter.com/SlavSzakal)
